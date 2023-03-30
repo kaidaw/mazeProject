@@ -1,0 +1,515 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+.menuItem {
+  width: 30%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid white;
+  background: transparent;
+}
+.menuBar {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: flex-start;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menuButton {
+  background: transparent;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+}
+
+.attribBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.characterSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid white;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.mapSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.mapRow {
+  display: flex;
+  flex-direction: row;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.changeSize {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+}
+.name {
+  width: 40%;
+}
+.attribute {
+  width: 20%;
+}
+.delete {
+  background-color: transparent;
+}
+.saveButton {
+  background-color: transparent;
+  padding: 20px;
+  margin: 25px;
+}
+.createEntity {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid white;
+}
+.directionButton {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+.characterButton {
+  margin: 10px;
+  background-color: transparent;
+}
+.incrementButton {
+  margin-right: 5px;
+  background-color: transparent;
+}
+.gridSquare {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 100%;
+  height: 100%;
+  margin: 15px;
+}
+.gridRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+.gridCell {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.roomEnabled {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+}
+
+.roomDisabled {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.enabledButton {
+  background-color: white;
+  color: black;
+}
+.disabledButton {
+  background-color: black;
+  color: white;
+}
+
+.itemSelect {
+  color: black;
+}
+
+.entitySheet {
+  border: 1px solid white;
+  width: 60%;
+  height: full;
+  display: flex;
+  flex-direction: column;
+  justify-conrent: space-between;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+}
+.entities {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.spawnOption {
+  background-color: black;
+  color: white;
+}
+.spawnPoint {
+  background-color: transparent;
+  color: black;
+}
+.gameSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.gameRow {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.screenContainer {
+  width: 100%;
+}
+.gameCell {
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 25px;
+}
+.currentCell {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  margin: 25px;
+  color: black;
+}
+.currentScreen {
+  height: 400px;
+  width: 80%;
+  background-color: lightgrey;
+  margin: 10px;
+  color: black;
+}
+.cellRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 33%;
+}
+.cellSegment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.screenSegment {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.statsSheet {
+  border: 1px solid white;
+  margin: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
+.textPrompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  border: 1px solid white;
+  color: lime;
+}
+.textOutput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+}
+.textLine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.textInput {
+  border: 1px solid white;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.textInputBar {
+  width: 30%;
+  margin: 10px;
+  color: lime;
+  background-color: black;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bigSymbol {
+  font-size: 100px;
+}
+.pickAvatar {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px;
+}
+.stickFigure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.stickBody {
+  font-size: 20px;
+}
+.stickLegs {
+  font-size: 20px;
+}
+.stickBodySmall {
+  font-size: 5px;
+}
+.stickLegsSmall {
+  font-size: 5px;
+}
+.displayCharacterInfo {
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.inventory {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+}
+.eye {
+  background-color: transparent;
+  border: 1px solid white;
+  margin: 10px;
+  padding: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  align-items: center;
+}
+.entry {
+  background-color: transparent;
+
+  padding: 10px;
+  margin: 10px;
+}
+.entrySelected {
+  background-color: white;
+  color: black;
+
+  padding: 10px;
+  margin: 10px;
+}
+.olde {
+  font-family: "Brush Script MT", cursive;
+  font-size: 80px;
+}
+.register {
+  font-size: 30px;
+}
+.scoreSheet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid white;
+}
+.scoreSheetItem {
+  margin: 5px;
+  font-size: 40px;
+}
+.thankYou {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.registerSheet {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.inputEmail {
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+}
+.inputPassword {
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+}
+.inputUser {
+  margin: 10px;
+  padding: 5px;
+  background-color: transparent;
+}
+.inputDetails {
+  background-color: transparent;
+  margin: 10px;
+}
